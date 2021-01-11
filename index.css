@@ -5,6 +5,8 @@
     background-image: url(./images/bg-intro-desktop.png);
     display: flex;
     flex-direction: row;
+    width: auto;
+    height: auto;
 }
 
 h1{
@@ -14,17 +16,17 @@ h1{
 }
 
 .texto1{
-    width: 40%;
+    width: 35%;
     height: 100px;
     display: flex;
     align-items: center;
-    margin-top: 250px;
-    margin-left: 230px;
+    margin-top: 200px;
+    margin-left: 170px;
     flex-direction: column;
 }
 
 p{
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Poppins', sans-serif;
     color: #e6e6e6;
 }
@@ -32,9 +34,11 @@ p{
 .containers{
 
     width: 200px;
-    height: 500px;
+    height: 670px;
     display: flex;
     flex-direction: column;
+    margin-top: 0px;
+    margin-left: 60px;
 }
 
 .try{
@@ -44,5 +48,31 @@ p{
     border-radius: 10px;
     margin-top: 100px;
     text-align: center;
+    display: flex;
+    flex-direction: row;
 
+}
+
+.try p{
+    font-size: 16px;
+    margin-top: 5%;
+    margin-left: 15px;
+    padding: 0px;
+}
+
+.try h1{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    margin-top: 5%;
+    margin-left: 15%;
+    padding: 0px;
+}
+
+.form{
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 500px;
+    height: 100%;
 }
