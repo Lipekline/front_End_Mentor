@@ -1,5 +1,10 @@
 @import url("https://fonts.google.com/specimen/Poppins");
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .fundo{
     background-color: #ff7978;
     background-image: url(./images/bg-intro-desktop.png);
@@ -13,6 +18,7 @@ h1{
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-size: 52px;
+    font-weight: 800;
 }
 
 .texto1{
@@ -23,6 +29,7 @@ h1{
     margin-top: 200px;
     margin-left: 170px;
     flex-direction: column;
+    
 }
 
 p{
@@ -43,7 +50,7 @@ p{
 
 .try{
     width: 500px;
-    height: 60px;
+    height: 100px;
     background-color: #5d54a3;
     border-radius: 10px;
     margin-top: 100px;
@@ -52,6 +59,9 @@ p{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    -webkit-box-shadow: 0px 10px 6px -1px rgba(0,0,0,0.26);
+-moz-box-shadow: 0px 10px 6px -1px rgba(0,0,0,0.26);
+box-shadow: 0px 10px 6px -1px rgba(0,0,0,0.26);
 
 }
 
@@ -73,15 +83,18 @@ p{
     margin-top: 30px;
     width: 500px;
     height: 100%;
+-webkit-box-shadow: 0px 10px 6px -1px rgba(0,0,0,0.26);
+-moz-box-shadow: 0px 10px 6px -1px rgba(0,0,0,0.26);
+box-shadow: 0px 10px 6px -1px rgba(0,0,0,0.26);
 }
 
 .form input{
     width: 100%;
-    height: 35px;
-    border: 2px solid;
-    border-color:#ff7978;
+    height: 50px;
+    border: 1px solid #555;
     border-radius: 7px;
     margin-bottom: 40px;
+    opacity: 1;
 }
 .labels{
     padding: 40px;
@@ -89,34 +102,38 @@ p{
     flex-direction: column;
 }
 
-.input-container input{ 
-    border:0;
-    border:1px solid #555;  
-    background:transparent;
+.form input:focus{  
+    border-color: #ff7978;
     width:100%;
     padding:8px 0 5px 0;
-    font-size:16px;
-    color:#555;
+    opacity: 1;
   }
 
-  .input-container input:focus{ 
-    border:none;	
-    outline:none;
-    border:2px solid #d28e8d;	
-   }
+.form button{
 
-   .input-container label{
-	position:relative;
-	top:30px;
-	left:0px;
-    font-size:18px;
+   width: 100%;
+   height: 60px;
+   background: 	#77e2b4;
+   outline: none;
+   border: 1px #fff;
+   border-radius: 5px;
+   cursor: pointer;
+   --webkit-box-shadow: 2px 6px 5px -2px rgba(0,0,0,0.45);
+   -moz-box-shadow: 2px 6px 5px -2px rgba(0,0,0,0.45);
+   box-shadow: 2px 6px 5px -2px rgba(0,0,0,0.45);
+
+}
+ 
+.form h3{
+    color: #ffffff;
     font-family: 'Poppins', sans-serif;
-	color: #d28e8d;	
-	transition: all 0.5s ease-in-out;
+    font-size: 16px;
+    font-weight: 700;
 }
 
-.input-container input:focus ~ label{
-	top:-30px;
-	font-size:12px;
-	
-}
+.form button:hover{
+        background-color: #2EE59D;
+        color: #fff;
+        transform: translateY(-3px);
+ }
+
